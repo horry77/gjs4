@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+<div class="my-5">
+
+
+    <input id="input_data" type="text">
+    <input value="제출" type="button" onclick="send_input()">
+
+    <h1 id="text">Hello World!</h1>
+    <p id="new_model_created_at"></p>
+
+<div id="new_model_list">
+
+</div>
+    </div>
+
+</body>
+
+<script src="{% static 'accountapp/js/hello_world.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body class="text-center">
+
+{% include 'header.html' %}
+
+<hr>
+
+{% block content %}
+{% endblock %}
+
+<hr>
+
+{% include 'footer.html' %}
+<script src="{% static 'accountapp/js/token_check.js'%}"></script>
+</body>
+</html>
