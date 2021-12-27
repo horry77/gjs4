@@ -14,7 +14,7 @@ RUN pip install gunicorn
 
 RUN pip install mysqlclient
 
-EXPOSE 8000
+EXPOSE 8500
 
 CMD ["bash", "-c", "python manage.py collectstatic --noinput --settings=gjs4.settings.deploy && python manage.py migrate --settings=gjs4.settings.deploy && gunicorn --env DJANGO_SETTINGS_MODULE=gjs4.settings.deploy gjs4.wsgi --bind 0.0.0.0:8500"]
 
